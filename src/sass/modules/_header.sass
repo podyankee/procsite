@@ -1,0 +1,65 @@
+.header__top
+	background-color: #303030
+.header
+	font-family: "Roboto-regular", sans-serif
+	&__btn
+		float: right
+		line-height: 36px
+		font-size: 16px
+		color: #1b1b1b
+		background-color: $accent-color
+		padding: 5px 20px 4px 50px
+		position: relative
+.header__contacts
+	&::after
+		content: ''
+		clear: both
+		display: block
+.header__phone,.header__email
+	color: $light-gray-color
+	letter-spacing: 0.25px
+	line-height: 45px
+	position: relative
+.header__phone
+	padding-left: 20px
+	padding-right: 30px
+.header__email
+	padding-left: 24px
+.header
+	&__content
+		padding: 34px 0 23px
+.header
+	&__content-inner
+		display: flex
+		justify-content: space-between
+.menu
+	li
+		display: inline-block
+	a
+		color: $link-color
+		font-size: 16px
+		line-height: 36px
+		border: 1px solid transparent
+		padding: 0 16px
+		transition: $trs
+		&:hover
+			border-color: $accent-color
+	li +li
+		padding: 10px
+.icon-phone, .icon-envelope
+	width: 16px
+	height: 15px
+	fill: $accent-color
+	position: absolute
+	left: 0
+	top: 50%
+	transform: translateY(-50%)
+.icon-briefcase
+	width: 20px
+	height: 18px
+	fill: #1b1b1b
+	position: absolute
+	left: 22px
+	top: 50%
+	transform: translateY(-50%)
+

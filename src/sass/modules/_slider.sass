@@ -1,0 +1,66 @@
+.slider
+	background-image: url(../img/slider_bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	min-height: 500px
+.slider__item-content
+	text-align: center
+	padding-top: 110px
+	max-width: 665px
+	margin: 0 auto
+.slider__title
+	text-transform: uppercase
+	font-size: 30px
+	line-height: 36px
+	color: $white-color
+	font-weight: 500
+	letter-spacing: 1.5px
+	margin-bottom: 22px
+	font-family: "Roboto-regular", sans-serif
+.slider__text
+	font-size: 18px
+	line-height: 24px
+	color: $text-color
+	margin-bottom: 50px
+.default__btn
+	display: inline-block
+	font-size: 14px
+	line-height: 24px
+	color: $white-color
+	font-weight: 500
+	font-family: "Roboto-regular", sans-serif
+	padding: 8px 30px 8px 24px
+	border: 1px solid $accent-color
+	border-right-width: 20px
+	position: relative
+	outline: none
+.icon-angle-right
+	width: 5px
+	height: 9px
+	fill: $white-color
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	right: -12px
+.slider__inner
+	position: relative
+.slick-btn
+	position: absolute
+	top: 70%
+	z-index: 3
+	width: 40px
+	height: 40px
+	border: 1px solid $white-color
+	background: $accent-color
+	color: $white-color
+	font-weight: 700
+	outline: none
+	cursor: pointer
+	&.slick-disabled
+		cursor: default
+		background: transparent
+.slick-next
+	right: 0
+.slick-prev
+	left: 0

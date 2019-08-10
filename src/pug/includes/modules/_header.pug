@@ -1,0 +1,28 @@
+header.header
+	.header__top
+		.container
+			.header__contacts
+				a.header__phone(href="tel:380963091245")
+					+icon('phone')
+					span +38 (096) 309 12 45
+				a.header__email(href="#")
+					+icon('envelope')
+					span layout585@gmail.com
+				a.header__btn(href="javascript:;" data-fancybox=""  data-src="#modal")
+					+icon('briefcase')
+					|Бесплатная консультация
+	.header__content
+		.container
+			.header__content-inner
+				.header__logo
+					img(src="assets/img/logo.png", alt="")
+				nav.menu
+					ul
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О компании
+						li
+							a(href="#") Услуги
+						li
+							a(href="#") Контакты
