@@ -1,0 +1,111 @@
+.form
+	padding-top: 30px
+.form__inner
+	padding-bottom: 40px
+	background-image: url(../img/form-bg.png)
+	min-height: 460px
+	background-repeat: no-repeat
+	background-position: bottom right
+.form__box
+	max-width: 850px
+	padding-top: 45px
+.form__box-inner
+	display: flex
+	justify-content: space-between
+	label, input, textarea, select
+		display: block
+		width: 100%
+	label
+		line-height: 36px
+		color: #282828
+		font-family: "Roboto-regular" sans-serif
+	input
+		margin-bottom: 8px
+		outline: none
+		height: 40px
+		border: 1px solid #e6e6e6
+		padding: 0 10px
+	select
+		outline: none
+		height: 40px
+		border: 1px solid #e6e6e6
+		padding-left: 17px
+		background: transparent
+	textarea
+		outline: none
+		height: 208px
+		border: 1px solid #e6e6e6
+		padding: 10px
+		height: 208px
+		resize: none
+		margin-bottom: 40px
+.form__box-left
+	max-width: 260px
+	width: 100%
+.form__box-right
+	max-width: 555px
+	width: 100%
+	button
+		background-color: transparent
+		color: #282828
+		float: right
+		.icon-angle-right
+			fill: $black-color
+.form__box-inner
+	.jq-selectbox.jqselect
+		display: block
+		width: 100%
+.form__box-inner
+	.jq-selectbox__select
+		height: 40px
+		border: 1px solid #e6e6e6
+		background: transparent
+		border-radius: 0
+		padding-left: 17px
+.form__box-inner
+	.jq-selectbox__trigger-arrow::before
+		content: '\003e'
+		color: #6b6a6a
+		position: absolute
+		top: 0
+		right: 17px
+		transform: rotate(90deg)
+.form__box-inner
+	.jq-selectbox__dropdown
+		width: 100%
+		margin: 2px 0 0
+		padding: 0
+		border: 1px solid #e6e6e6
+		background: $white-color
+		box-shadow: 0 2px 10px rgba(0,0,0,0.2)
+.form__box-inner
+	.jq-selectbox li
+		min-height: 18px
+		padding: 5px 17px 6px
+		color: #231f20
+.form__box-inner
+	.jq-selectbox li:hover
+		background-color: #08c
+		color: $white-color
+.form__box-inner
+	.jq-selectbox li:selected
+		background-color: #a3abb1
+		color: $white-color
+.form__box-inner
+	.jq-selectbox li.disabled
+			color: #aaa
+.form__box-inner
+	.jq-selectbox li.disabled:hover
+			background: none
+.form__box-inner
+	.jq-selectbox li.optgroup
+			font-weight: 700
+.form__box-inner
+	.jq-selectbox li.optgroup:hover
+			background: none
+			color: #231f20
+			cursor: default
+.form__box-inner
+	.jq-selectbox li.option
+		padding-left: 25px
+

@@ -19,6 +19,13 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.p
 
 module.exports = {
 
+  resolve: {
+    alias: {
+      $: path.resolve('node_modules', 'jquery/src/jquery'),
+      jquery: path.resolve('node_modules', 'jquery/src/jquery')
+    }
+  },
+
   externals: {
     paths: PATHS
   },
