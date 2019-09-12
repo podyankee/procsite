@@ -36,6 +36,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
+    // publicPath: '/procsite/'
     publicPath: '/'
   },
   module: {
@@ -56,8 +57,8 @@ module.exports = {
       loader: 'file-loader',
       options: {
         name: '[name].[ext]',
-        exclude: [/\.svg$/]
-
+        // exclude: [/\.svg$/]
+        publicPath: '../img'
       }
     },
     {
@@ -101,7 +102,7 @@ module.exports = {
       loader: 'url-loader',
       options: {
         limit: 10000,
-        name: `${PATHS.assets}/fonts/[name].[hash:7].[ext]`
+        name: `${PATHS.assets}fonts/[name].[hash:7].[ext]`
       }
     }
     ]

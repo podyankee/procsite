@@ -1,25 +1,39 @@
-*
+*, *::after, *::before
 	box-sizing: border-box
 body
 	font-family: $mainFont
 	font-size: $mainFontSize
-	color: $mainFontColor
+	color: $black-color
 	line-height: $mainLineHeight
 	font-weight: $mainFontWeight
 .container
 	max-width: 1170px
 	margin: 0 auto
 	padding: 0 15px
-.wrap
-	+min-max(320px, 1200px, 15px)
-p
-	color: $black-color
-ul, li
-	list-style-type: none
-	padding: 0
-	margin: 0
+	&-fluid
+		max-width: 1720px
+		margin: 0 auto
 a
 	text-decoration: none
 	display: inline-block
-#modal
-	display: none
+.form__btn
+	padding: 22px 110px 22px 70px
+	border: none
+	outline: none
+	color: $white-color
+	background-color: #7eb252
+	font-size: 14px
+	letter-spacing: 1px
+	font-family: "Montserrat-bold"
+	font-weight: 700
+	text-transform: uppercase
+	cursor: pointer
+	position: relative
+	&::after
+		content: ''
+		background-image: url(../img/arrow-right.png)
+		width: 31px
+		height: 9px
+		position: absolute
+		right: 60px
+		top: 25px

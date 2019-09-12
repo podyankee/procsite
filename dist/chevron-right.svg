@@ -1,0 +1,10 @@
+module.exports = {
+  id: "chevron-right",
+  url: __webpack_public_path__ + "___696b325c19a6a01065c8258e4fff65ce___",
+  width: 9,
+  height: 14,
+  viewBox: "0 0 9 14",
+  toString: function () { return __webpack_public_path__ + "___696b325c19a6a01065c8258e4fff65ce___" },
+  backgroundSize: "___020959a52faab0980e3d8674b13570db___ ___756050cd51df3f45cae9f9a05c9fdfcc___",
+  backgroundPosition: "___acc5e11007b18180940c93b46facce21___ ___501aab4f20432c1f19837d365fe00656___"
+}

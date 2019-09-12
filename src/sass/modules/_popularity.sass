@@ -1,0 +1,73 @@
+.popularity
+	padding-top: 200px
+	&__wrapper
+		min-height: 645px
+		background-image: url(../img/popularity.jpg)
+		background-repeat: no-repeat
+	&__inner
+		display: flex
+		align-items: flex-end
+		justify-content: flex-end
+
+	&__right
+		max-width: 500px
+		width: 100%
+		padding-right: 15px
+		&-title
+			font-family: "Montserrat-black", sans-serif
+			line-height: 50px
+			font-size: 40px
+			color: $black-color
+			margin-top: 55px
+		&-subtitle
+			color: $black-color
+			padding: 50px 0
+			font-family: "Montserrat-black", sans-serif
+			font-size: 14px
+			text-transform: uppercase
+		&-list
+			list-style: none
+			li
+				color: $black-color
+				line-height: 22px
+				margin-bottom: 45px
+				padding-left: 40px
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					width: 8px
+					height: 13px
+					background-image: url(../img/chevron-right.svg)
+					top: 50%
+					transform: translateY(-50%)
+.popularity
+	&__box
+		background-color:  $white-color
+		padding: 20px
+		&-text
+			border: 1px solid #c5dab5
+			padding: 30px
+			color: $black-color
+			margin-right: 70px
+		&-link
+			padding: 22px 71px 22px 27px
+			outline: none
+			color: $white-color
+			font-family: "Montserrat-black", sans-serif
+			letter-spacing: 1px
+			background-color: #7eb252
+			text-transform: uppercase
+			text-decoration: none
+			position: absolute
+			&::after
+				content: ''
+				position: absolute
+				right: 40px
+				top: 30px
+				width: 31px
+				height: 9px
+				background-image: url(../img/arrow-right.png)
+
+

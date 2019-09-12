@@ -1,0 +1,93 @@
+.top
+	margin-bottom: 75px
+	&__images
+		background-image: url(../img/top-bg.jpg)
+		min-height: 545px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		max-width: 1720px
+		margin: 0 auto
+	&__wrapper
+		margin-top: -450px
+	&__inner
+		display: flex
+		justify-content: space-between
+		&-img
+			margin-left: 125px
+		&-form
+			max-width: 570px
+			width: 100%
+.top__inner
+	&-suptitle
+		margin-top: 70px
+		margin-bottom: 25px
+		font-family: "Montserrat-bold"
+		font-size: 14px
+		text-transform: uppercase
+		color: $white-color
+		letter-spacing: 2px
+	&-title
+		font-size: 60px
+		margin-bottom: 40px
+		font-family: "Montserrat-bold"
+		color: $white-color
+	&-text
+		margin-bottom: 73px
+		color: $white-color
+		font-size: 18px
+		line-height: 24px
+.top-form
+	background-color: $white-color
+	padding: 20px
+	form
+		border: 1px solid $green-color
+		position: relative
+	&__inner
+		padding: 50px
+	&__title
+		font-family: "Montserrat-bold"
+		color: $black-color
+		font-size: 14px
+		line-height: 22px
+		letter-spacing: 2px
+		margin-bottom: 35px
+		text-transform: uppercase
+		width: 190px
+	input
+		border: none
+		padding-top: 14px
+		padding-bottom: 14px
+		border-bottom: 1px solid $green-color
+		outline: none
+		font-size: 14px
+		color: $green-color
+		font-family: "$Montserrat-bold"
+		width: 195px
+		margin-bottom: 60px
+		&::placeholder
+			color: $green-color
+		&+input
+			margin-left: 30px
+	button
+		position: absolute
+		right: 0
+		bottom: 0
+		padding: 22px 110px 22px 70px
+		border: none
+		outline: none
+		color: $white-color
+		background-color: #7eb252
+		font-size: 14px
+		letter-spacing: 1px
+		font-family: "Montserrat-bold"
+		text-transform: uppercase
+		cursor: pointer
+		&::after
+			content: ''
+			background-image: url(../img/arrow-right.png)
+			width: 31px
+			height: 9px
+			position: absolute
+			right: 60px
+			top: 25px

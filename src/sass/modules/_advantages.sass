@@ -1,45 +1,33 @@
 .advantages
-	padding: 55px 0 40px
-	background-image: url(../img/advantages-bg.jpg)
-	background-repeat: no-repeat
-	background-position: center
-	min-height: 285px
-	background-size: cover
+	margin-bottom: 50px
 	&__inner
-		color: $white-color
-		text-align: center
 		display: flex
-		justify-content: space-between
+		justify-content: space-around
 	&__item
-		max-width: 360px
-		padding: 0 20px
-	&__title
-		font-size: 18px
-		line-height: 24px
-		font-family: "Roboto-medium" sans-serif
-		padding: 60px 0 15px
+		width: 240px
+		padding-left: 40px
+		padding-top: 35px
 		position: relative
-		&:before
+		&::before
+			content: ''
 			position: absolute
-			width: 40px
-			height: 40px
-			border: 2px solid $accent-color
+			width: 25px
+			height: 25px
+			border-radius: 50%
+			border: 5px solid rgba(126, 178, 82, .3)
 			top: 0
-			left: 50%
-			transform: translateX(-50%)
-			content: ''
-		&:after
-			content: ''
+			left: 0
+		&-number
+			color: #a4c58c
+			font-size: 18px
+			line-height: 24px
+			font-family: "Montserrat-medium" sans-serif
+			border-bottom: 1px solid #000
+			color: #a4c58c
 			display: inline-block
-			width: 14px
-			height: 14px
-			background-image: url("data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaGVjayIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWNoZWNrIGZhLXctMTYiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTE3My44OTggNDM5LjQwNGwtMTY2LjQtMTY2LjRjLTkuOTk3LTkuOTk3LTkuOTk3LTI2LjIwNiAwLTM2LjIwNGwzNi4yMDMtMzYuMjA0YzkuOTk3LTkuOTk4IDI2LjIwNy05Ljk5OCAzNi4yMDQgMEwxOTIgMzEyLjY5IDQzMi4wOTUgNzIuNTk2YzkuOTk3LTkuOTk3IDI2LjIwNy05Ljk5NyAzNi4yMDQgMGwzNi4yMDMgMzYuMjA0YzkuOTk3IDkuOTk3IDkuOTk3IDI2LjIwNiAwIDM2LjIwNGwtMjk0LjQgMjk0LjQwMWMtOS45OTggOS45OTctMjYuMjA3IDkuOTk3LTM2LjIwNC0uMDAxeiI+PC9wYXRoPjwvc3ZnPg==")
-			position: absolute
-			top: 15px
-			left: 50%
-			transform: translateX(-50%)
-
-	&__text
-		line-height: 24px
-		color: #d3d2d2
-		letter-spacing: 0.1px
+			span
+				font-size: 30px
+				margin-right: 5px
+		&-text
+			padding-top: 20px
+			line-height: 24px
