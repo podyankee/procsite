@@ -183,40 +183,40 @@ template {
 	font-family: Montserrat-thin;
 	font-weight: 300;
 	font-style: normal;
-	src: url(./assets/fonts/montserrat-thin.eot);
-	src: url(./assets/fonts/montserrat-thin.eot?#iefix) format("embedded-opentype"), url(./assets/fonts/montserrat-thin.woff) format("woff"), url(./assets/fonts/montserrat-thin.ttf) format("truetype")
+	src: url(../fonts/montserrat-thin.eot);
+	src: url(../fonts/montserrat-thin.eot?#iefix) format("embedded-opentype"), url(./assets/fonts/montserrat-thin.woff) format("woff"), url(./assets/fonts/montserrat-thin.ttf) format("truetype")
 }
 
 @font-face {
 	font-family: Montserrat-regular;
 	font-weight: 400;
 	font-style: normal;
-	src: url(./assets/fonts/montserrat-regular.eot);
-	src: url(./assets/fonts/montserrat-regular.eot?#iefix) format("embedded-opentype"), url(./assets/fonts/montserrat-regular.woff) format("woff"), url(./assets/fonts/montserrat-regular.ttf) format("truetype")
+	src: url(../fonts/montserrat-regular.eot);
+	src: url(../fonts/montserrat-regular.eot?#iefix) format("embedded-opentype"), url(..fonts/montserrat-regular.woff) format("woff"), url(../fonts/montserrat-regular.ttf) format("truetype")
 }
 
 @font-face {
 	font-family: Montserrat-medium;
 	font-weight: 500;
 	font-style: normal;
-	src: url(./assets/fonts/montserrat-medium.eot);
-	src: url(./assets/fonts/montserrat-medium.eot?#iefix) format("embedded-opentype"), url(./assets/fonts/montserrat-medium.woff) format("woff"), url(./assets/fonts/montserrat-medium.ttf) format("truetype")
+	src: url(../fonts/montserrat-medium.eot);
+	src: url(../fonts/montserrat-medium.eot?#iefix) format("embedded-opentype"), url(..fonts/montserrat-medium.woff) format("woff"), url(../fonts/montserrat-medium.ttf) format("truetype")
 }
 
 @font-face {
 	font-family: Montserrat-semibold;
 	font-weight: 600;
 	font-style: normal;
-	src: url(./assets/fonts/montserrat-semibold.eot);
-	src: url(./assets/fonts/montserrat-semibold.eot?#iefix) format("embedded-opentype"), url(./assets/fonts/montserrat-semibold.woff) format("woff"), url(./assets/fonts/montserrat-semibold.ttf) format("truetype")
+	src: url(../fonts/montserrat-semibold.eot);
+	src: url(../fonts/montserrat-semibold.eot?#iefix) format("embedded-opentype"), url(..fonts/montserrat-semibold.woff) format("woff"), url(../fonts/montserrat-semibold.ttf) format("truetype")
 }
 
 @font-face {
 	font-family: Montserrat-bold;
 	font-weight: 700;
 	font-style: normal;
-	src: url(./assets/fonts/montserrat-bold.eot);
-	src: url(./assets/fonts/montserrat-bold.eot?#iefix) format("embedded-opentype"), url(./assets/fonts/montserrat-bold.woff) format("woff"), url(./assets/fonts/montserrat-bold.ttf) format("truetype")
+	src: url(../fonts/montserrat-bold.eot);
+	src: url(../fonts/montserrat-bold.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-bold.woff) format("woff"), url(../fonts/montserrat-bold.ttf) format("truetype")
 }
 
 *,
@@ -470,7 +470,7 @@ a {
 
 .top-form button:after {
 	content: "";
-	background-image: url(./arrow-right.png);
+	background-image: url(../img/arrow-right.png);
 	width: 31px;
 	height: 9px;
 	position: absolute;
@@ -574,7 +574,7 @@ a {
 .tabs__content {
 	min-width: 500px;
 	height: 689px;
-	background-image: url(./list-images.jpg);
+	background-image: url(../img/list-images.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -777,7 +777,7 @@ a {
 	position: absolute;
 	right: 100px;
 	top: 28px;
-	background-image: url(./arrow-right.png);
+	background-image: url(../img/arrow-right.png);
 	width: 30px;
 	height: 9px
 }
@@ -788,7 +788,7 @@ a {
 
 .popularity__wrapper {
 	min-height: 645px;
-	background-image: url(./popularity.jpg);
+	background-image: url(../img/popularity.jpg);
 	background-repeat: no-repeat
 }
 
@@ -882,7 +882,7 @@ a {
 	top: 30px;
 	width: 31px;
 	height: 9px;
-	background-image: url(./arrow-right.png)
+	background-image: url(../img/arrow-right.png)
 }
 
 .history {
@@ -891,7 +891,7 @@ a {
 }
 
 .history__wrapper {
-	background-image: url(./alonzo.jpg);
+	background-image: url(../img/alonzo.jpg);
 	background-repeat: no-repeat;
 	background-position: 100%;
 	min-height: 920px
@@ -979,7 +979,7 @@ a {
 }
 
 .quote {
-	background-image: url(./flower-1.png);
+	background-image: url(../img/flower-1.png);
 	background-position: 0;
 	margin-bottom: 100px
 }
@@ -993,7 +993,7 @@ a {
 
 .quote__wrapper {
 	padding: 150px 0 100px;
-	background-image: url(./flower.png);
+	background-image: url(../img/flower.png);
 	background-position: 100%
 }
 
@@ -1157,7 +1157,7 @@ a {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	background-image: url(./comp-bg.png);
+	background-image: url(../img/comp-bg.png);
 	background-repeat: no-repeat;
 	background-position: 50%;
 	background-size: cover;
@@ -1175,47 +1175,47 @@ a {
 }
 
 .composition__item-1 .composition__item-inner {
-	background-image: url(./comp-1.png)
+	background-image: url(../img/comp-1.png)
 }
 
 .composition__item-2 .composition__item-inner {
-	background-image: url(./comp-2.png)
+	background-image: url(../img/comp-2.png)
 }
 
 .composition__item-3 .composition__item-inner {
-	background-image: url(./comp-3.png)
+	background-image: url(../img/comp-3.png)
 }
 
 .composition__item-4 .composition__item-inner {
-	background-image: url(./comp-4.png)
+	background-image: url(../img/comp-4.png)
 }
 
 .composition__item-5 .composition__item-inner {
-	background-image: url(./comp-5.png)
+	background-image: url(../img/comp-5.png)
 }
 
 .composition__item-6 .composition__item-inner {
-	background-image: url(./comp-6.png)
+	background-image: url(../img/comp-6.png)
 }
 
 .composition__item-7 .composition__item-inner {
-	background-image: url(./comp-7.png)
+	background-image: url(../img/comp-7.png)
 }
 
 .composition__item-8 .composition__item-inner {
-	background-image: url(./comp-8.png)
+	background-image: url(../img/comp-8.png)
 }
 
 .composition__item-9 .composition__item-inner {
-	background-image: url(./comp-9.png)
+	background-image: url(../img/comp-9.png)
 }
 
 .composition__item-10 .composition__item-inner {
-	background-image: url(./comp-10.png)
+	background-image: url(../img/comp-10.png)
 }
 
 .composition__item-11 .composition__item-inner {
-	background-image: url(./comp-11.png)
+	background-image: url(../img/comp-11.png)
 }
 
 .composition__item-inner:hover .composition__item-effect {
@@ -1320,7 +1320,7 @@ a {
 	top: 30px;
 	width: 31px;
 	height: 9px;
-	background-image: url(./arrow-right.png)
+	background-image: url(../img/arrow-right.png)
 }
 
 .composition__item-title {
