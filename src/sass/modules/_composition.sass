@@ -1,0 +1,143 @@
+.composition
+	padding: 100px 0 100px
+.composition__item
+	background-color: #f6f9f3
+	margin-bottom: 30px
+	&-inner
+		width: 270px
+		height: 270px
+		background-position: center
+		background-repeat: no-repeat
+		background-size: auto
+		position: relative
+	&-num, &-name
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 3px
+		color: #a4c58c
+		font-family: Montserrat-bold, sans-serif
+		position: absolute
+		transform: rotate(-90deg)
+	&-num
+		top: 27px
+		left: -3px
+		text-transform: uppercase
+	&-name
+		font-family: Montserrat-regular, sans-serif
+		right: 33px
+		bottom: 13px
+		white-space: nowrap
+		width: 0
+		height: 0
+	&-effect
+		opacity: 0
+		position: absolute
+		left: 20px
+		right: 20px
+		top: 20px
+		bottom: 20px
+		display: flex
+		align-items: center
+		justify-content: center
+		background-image: url(../img/comp-bg.png)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		transition: $trs
+	&-text
+		color: #fff
+		padding: 5px
+		font-size: 14px
+		font-family: Montserrat-bold, sans-serif
+		text-align: center
+@for $i from 1 through 11
+	.composition__item-#{$i}
+		.composition__item-inner
+			background-image: url("../img/comp-#{$i}.png")
+.composition__item-inner:hover
+	.composition__item-effect
+		opacity: 1
+.composition__row
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.composition__box
+	max-width: 560px
+	padding-left: 70px
+	padding-right: 50px
+.composition
+	&__title
+		font-family: Montserrat-bold, sans-serif
+		font-size: 40px
+		line-height: 50px
+		margin-bottom: 30px
+		margin-top: -60px
+	&__box
+		&-list
+			list-style: none
+			li
+				line-height: 22px
+				padding-left: 22px
+				position: relative
+				margin-bottom: 25px
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 6px
+					width: 7px
+					height: 7px
+					border-radius: 50%
+					background-color: #a4c58c
+.composition__link
+	border: 1px solid #c8dcba
+	padding: 34px 100px 103px 49px
+	margin-left: 15px
+	max-width: 830px
+	height: 100%
+	position: relative
+	&-text
+		padding-left: 25px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 6px
+			width: 7px
+			height: 7px
+			border-radius: 50%
+			background-color: #a4c58c
+		p
+			line-height: 22px
+			margin-bottom: 15px
+.composition__link-btn
+	padding: 22px 85px 22px 50px
+	outline: none
+	color: $white-color
+	font-family: "Montserrat-bold", sans-serif
+	letter-spacing: 1px
+	background-color: #7eb252
+	text-transform: uppercase
+	text-decoration: none
+	position: absolute
+	bottom: 0
+	right: 0
+	&::after
+		content: ''
+		position: absolute
+		right: 40px
+		top: 30px
+		width: 31px
+		height: 9px
+		background-image: url(../img/arrow-right.png)
+
+.composition__item-title
+	color: #303030
+	font-family: Montserrat-bold, sans-serif
+	font-size: 14px
+	line-height: 22px
+	text-transform: uppercase
+	letter-spacing: 0.7px
+	padding-left: 49px
+	padding-top: 103px
