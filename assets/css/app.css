@@ -268,7 +268,7 @@ a {
 
 .form__btn:after {
 	content: "";
-	background-image: url(./arrow-right.png);
+	background-image: url(../img/arrow-right.png);
 	width: 31px;
 	height: 9px;
 	position: absolute;
@@ -333,7 +333,7 @@ a {
 }
 
 .top__images {
-	background-image: url(./top-bg.jpg);
+	background-image: url(../img/top-bg.jpg);
 	min-height: 545px;
 	background-repeat: no-repeat;
 	background-size: cover;
