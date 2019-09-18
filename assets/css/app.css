@@ -184,7 +184,7 @@ template {
 	font-weight: 300;
 	font-style: normal;
 	src: url(../fonts/montserrat-thin.eot);
-	src: url(../fonts/montserrat-thin.eot?#iefix) format("embedded-opentype"), url(./assets/fonts/montserrat-thin.woff) format("woff"), url(./assets/fonts/montserrat-thin.ttf) format("truetype")
+	src: url(../fonts/montserrat-thin.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-thin.woff) format("woff"), url(../fonts/montserrat-thin.ttf) format("truetype")
 }
 
 @font-face {
@@ -192,7 +192,7 @@ template {
 	font-weight: 400;
 	font-style: normal;
 	src: url(../fonts/montserrat-regular.eot);
-	src: url(../fonts/montserrat-regular.eot?#iefix) format("embedded-opentype"), url(..fonts/montserrat-regular.woff) format("woff"), url(../fonts/montserrat-regular.ttf) format("truetype")
+	src: url(../fonts/montserrat-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-regular.woff) format("woff"), url(../fonts/montserrat-regular.ttf) format("truetype")
 }
 
 @font-face {
@@ -200,7 +200,7 @@ template {
 	font-weight: 500;
 	font-style: normal;
 	src: url(../fonts/montserrat-medium.eot);
-	src: url(../fonts/montserrat-medium.eot?#iefix) format("embedded-opentype"), url(..fonts/montserrat-medium.woff) format("woff"), url(../fonts/montserrat-medium.ttf) format("truetype")
+	src: url(../fonts/montserrat-medium.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-medium.woff) format("woff"), url(../fonts/montserrat-medium.ttf) format("truetype")
 }
 
 @font-face {
@@ -208,7 +208,7 @@ template {
 	font-weight: 600;
 	font-style: normal;
 	src: url(../fonts/montserrat-semibold.eot);
-	src: url(../fonts/montserrat-semibold.eot?#iefix) format("embedded-opentype"), url(..fonts/montserrat-semibold.woff) format("woff"), url(../fonts/montserrat-semibold.ttf) format("truetype")
+	src: url(../fonts/montserrat-semibold.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-semibold.woff) format("woff"), url(../fonts/montserrat-semibold.ttf) format("truetype")
 }
 
 @font-face {
