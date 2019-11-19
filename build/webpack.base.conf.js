@@ -3,11 +3,12 @@ const fs = require('fs')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+let isDev = false
+let isProd = !isDev
 const {
 	CleanWebpackPlugin
 } = require('clean-webpack-plugin')
 
-const SpritePlugin = require('extract-svg-sprite-webpack-plugin')
 const Webpack = require('webpack')
 
 const PATHS = {
@@ -32,21 +33,33 @@ module.exports = {
 	output: {
 		filename: `${PATHS.assets}js/[name].js`,
 		path: PATHS.dist,
-		publicPath: './'
+		publicPath: '/'
+	},
+	optimization: {
+		splitChunks: {
+			cacheGroups: {
+				vendor: {
+					name: 'vendors',
+					test: /node_modules/,
+					chunks: 'all',
+					enforce: true
+				}
+			}
+		}
 	},
 	module: {
 		rules: [{
-			test: /\.js$/,
-			loader: 'babel-loader',
-			exclude: '/node_modules/'
-		},
-		{
-			test: /\.pug$/,
-			loader: 'pug-loader',
-			options: {
-				pretty: true
-			}
-		},
+				test: /\.js$/,
+				loader: 'babel-loader',
+				exclude: '/node_modules/'
+			},
+			{
+				test: /\.pug$/,
+				loader: 'pug-loader',
+				options: {
+					pretty: true
+				}
+			},
 			{
 				test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
 				loader: 'url-loader',
@@ -55,50 +68,65 @@ module.exports = {
 					name: `${PATHS.assets}fonts/[name].[ext]`
 				}
 			},
-		{
-			test: /\.(png|jpg|gif)$/,
-			loader: 'file-loader',
-			options: {
-				name: '[name].[ext]',
+			{
+				test: /\.(png|jpg|gif|ico|svg)(\?.*)?$/,
+				exclude: [
+					'/svg/sprite/*.svg'
+				],
+				loader: 'file-loader',
+				options: {
+					name: `${PATHS.assets}img/[name].[ext]`,
 
+				}
+			},
+			{
+				test: /\.sass$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							sourceMap: true
+						}
+					},
+					{
+						loader: 'postcss-loader',
+						options: {
+							sourceMap: true,
+							config: {
+								path: `${PATHS.src}/postcss.config.js`
+							}
+						}
+					},
+					{
+						loader: 'sass-loader',
+						options: {
+							sourceMap: true
+						}
+					}
+				]
+			},
+			{
+				test: /\.css$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							sourceMap: true
+						}
+					},
+					{
+						loader: 'postcss-loader',
+						options: {
+							sourceMap: true,
+							config: {
+								path: `${PATHS.src}/js/postcss.config.js`
+							}
+						}
+					}
+				]
 			}
-		},
-		{
-			test: /\.svg$/,
-			loader: SpritePlugin.loader
-		},
-		{
-			test: /\.sass$/,
-			use: [
-				MiniCssExtractPlugin.loader,
-				{
-					loader: 'css-loader',
-					options: { sourceMap: true }
-				},
-				{
-					loader: 'postcss-loader',
-					options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` } }
-				},
-				{
-					loader: 'sass-loader',
-					options: { sourceMap: true }
-				}
-			]
-		},
-		{
-			test: /\.css$/,
-			use: [
-				MiniCssExtractPlugin.loader,
-				{
-					loader: 'css-loader',
-					options: { sourceMap: true }
-				},
-				{
-					loader: 'postcss-loader',
-					options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` } }
-				}
-			]
-		}
 		]
 	},
 
@@ -107,19 +135,25 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: `${PATHS.assets}css/[name].css`
 		}),
-		new CopyWebpackPlugin([
-			{ from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
-			{ from: `${PATHS.src}/static`, to: '' }
+		new CopyWebpackPlugin([{
+				from: `${PATHS.src}/img`,
+				to: `${PATHS.assets}img`
+			},
+			{
+				from: `${PATHS.src}/static`,
+				to: ''
+			}
 		]),
 		...PAGES.map(page => new HtmlWebpackPlugin({
 			template: `${PAGES_DIR}/${page}`,
 			filename: `./${page.replace(/\.pug/, '.html')}`
 		})),
-		new SpritePlugin({}),
 		new Webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery',
 			'window.jQuery': 'jquery'
 		})
-	]
+	],
+	mode: isDev ? 'development' : 'production',
+	devtool: isDev ? 'eval-source-map' : 'none'
 }
