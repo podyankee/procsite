@@ -1,3 +1,82 @@
+@media ( max-width: 1040px )
+	.top__inner-img
+		margin-left: 0
+@media ( max-width: 940px )
+	.top__inner-form
+		position: absolute
+		right: 15px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+	.top__inner
+		&-suptitle
+			width: 280px
+			margin-right: 100px
+		&-title
+			width: 280px
+			margin-right: 100px
+			font-size: 50px
+			line-height: 50px
+		&-text
+			width: 280px
+			margin-right: 100px
+			font-size: 16px
 @media ( max-width: 768px )
 	.header__text
 		font-size: 14px
+	.top__inner-suptitle
+		margin-top: 25px
+	.top__inner-text
+		margin-bottom: 50px
+@media ( max-width: 760px )
+	.top__inner-img img
+		width: 200px
+@media ( max-width: 700px )
+	.header__text
+		display: none
+@media ( max-width: 640px )
+	.top__inner-form
+		left: 15px
+	.top__inner-img img
+		width: 150px
+	.mobile__link-btn
+		display: block
+	.top-form, .top__inner-text
+		display: none
+	.top__inner-form
+		position: static
+		align-items: center
+		text-align: center
+	.top__inner
+		flex-direction: column
+		align-items: center
+		&-suptitle, &-title, &-text
+			width: 100%
+			margin-right: 0
+		&-img
+			order: 1
+@media ( max-width: 600px )
+	.top__inner-img img
+		width: 85px
+@media ( max-width: 480px )
+	.header__phone
+		font-size: 14px
+	.header__phone a::before, .header__phone-text
+		display: none
+	.header__logo img
+		width: 110px
+
+@media ( max-width: 360px )
+	.top__images
+		min-height: 375px
+	.top__inner
+		&-title
+			font-size: 30px
+			line-height: 36px
+			padding: 0 15px
+			margin-bottom: 16px
+		&-suptitle
+			font-size: 12px
+			margin-bottom: 10px
+	.top__wrapper
+		margin-top: -365px
