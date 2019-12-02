@@ -1,6 +1,181 @@
+@media ( max-width: 1640px )
+	.popularity
+		&__right
+			background-color: $white-color
+			padding-left: 15px
+			padding-right: 0
+	.history
+		&__form
+			margin-left: 0
+		&__wrapper
+			background-size: 50%
+@media ( max-width: 1400px )
+	.popularity
+		&__wrapper
+			background-size: 750px
+@media ( max-width: 1230px )
+	.popularity
+		position: relative
+		padding-top: 50px
+		&__wrapper
+			background-image: none
+		&__inner
+			flex-direction: column
+			align-items: center
+			justify-content: center
+		&__right
+			padding-left: 0
+			max-width: 800px
+			order: 0
+		&__box
+			order: 1
+			max-width: 600px
+			position: absolute
+			z-index: 5
+			bottom: -110px
+			&-text
+				margin-right: 0
+			&-link
+				padding-right: 26px
+				&::after
+					display: none
+	.mobile-bg
+		background-image: url(../img/popularity.jpg)
+		background-repeat: no-repeat
+		min-height: 645px
+		display: block
+		background-size: cover
+	.history
+		background-color: #f6f9f3
+		padding-top: 160px
+		&__wrapper
+			background-image: none
+			min-height: 0
+		&__text
+			max-width: 100%
+			padding-bottom: 60px
+			padding-left: 15px
+			padding-right: 15px
+		&__title
+			text-align: center
+			max-width: 100%
+			padding-left: 15px
+			padding-right: 15px
+		&__form
+			max-width: 100%
+			background-color: #fff
+			padding-top: 30px
+			padding-left: 45px
+			padding-right: 50%
+			position: relative
+			padding-bottom: 242px
+			&::after
+				content: ''
+				position: absolute
+				width: 355px
+				height: 420px
+				background-image: url(../img/alonzo.jpg)
+				right: 15px
+				top: -25px
+				background-size: cover
+		.container
+			padding-left: 0
+			padding-right: 0
+	.quote
+		padding: 0
+		min-height: 0
+		background-image: none
+		&__wrapper
+			padding: 0
+			min-height: 0
+			background-image: none
+	.composition
+		&__box
+			max-width: 100%
+			order: 0
+		&__item
+			order: 1
+		&__row
+			justify-content: space-around
+		&__link
+			max-width: 600px
+	.reviews__text:nth-child(even)
+		display: none
+	.reviews__text
+		max-width: 100%
+
+@media ( max-width: 1120px )
+	.advantages
+		&__inner
+			flex-wrap: wrap
+		&__item
+			width: 50%
+			padding-right: 70px
 @media ( max-width: 1040px )
 	.top__inner-img
 		margin-left: 0
+	.items
+		&__title
+			text-align: center
+			margin: 0 auto
+		&__inner
+			padding: 20px 5px
+	.item
+		margin-left: 7px
+		margin-right: 7px
+		width: 33.3333%
+	.sertificate__content
+		padding-left: 0
+	.footer
+		&__phone, &__logo
+			display: none
+@media ( max-width: 1000px )
+	.list
+		&__inner
+			display: block
+		&__link
+			justify-content: center
+			a
+				padding: 22px 36px 22px 73px
+				min-width: 430px
+				&::after
+					right: 55px
+	.tabs
+		&__content
+			margin: 0 auto
+			max-width: 500px
+			&::before, &::after
+				content: ''
+				position: absolute
+				height: 100%
+				width: 100%
+				background-color: #a4c58c
+				z-index: 1
+			&::before
+				right: 100%
+			&::after
+				left: 100%
+		&__reviews
+			left: 0
+			right: 0
+			margin: 0 auto
+			&-link
+				left: 132px
+			&::after, &::before
+				content: ''
+				position: absolute
+				background-color: #fff
+				width: 100%
+				height: 20px
+				bottom: -20px
+				z-index: 2
+			&::before
+				right: 100%
+			&::after
+				left: 100%
+	.list
+		&__inner
+			padding-bottom: 20px
 @media ( max-width: 940px )
 	.top__inner-form
 		position: absolute
@@ -21,6 +196,49 @@
 			width: 280px
 			margin-right: 100px
 			font-size: 16px
+	.advantages
+		&__inner
+			padding-top: 100px
+	.item
+		min-height: 275px
+	.composition
+		&__link
+			order: 2
+	.reviews
+		&__link
+			flex-direction: column
+			&-tab
+				margin-bottom: 30px
+	.sertificate
+		padding-top: 25px
+		&__inner
+			height: 100%
+			display: block
+		&__title
+			text-align: center
+		&__text
+			padding-right: 0
+			text-align: center
+		&__content
+			max-width: 100%
+			margin-right: 0
+		&__images
+			position: static
+			padding: 25px 0
+			text-align: center
+
+@media ( max-width: 840px )
+	.reviews__link
+		margin-bottom: 0
+	.build
+		&__inner
+			padding: 0
+			max-width: 644px
+			&-box
+				padding: 60px 45px 70px 50px
+		&__wrapper
+			background-image: none
+
 @media ( max-width: 768px )
 	.header__text
 		font-size: 14px
@@ -28,12 +246,172 @@
 		margin-top: 25px
 	.top__inner-text
 		margin-bottom: 50px
+	.advantages
+		margin-bottom: 100px
+		&__inner
+			padding-top: 10px
+			padding-left: 80px
+			padding-right: 50px
+		&__item
+			padding-right: 60px
+	.list
+		&__title
+			padding-top: 0
+			text-align: center
+			max-width: 370px
+			margin: 0 auto 30px
+			font-size: 30px
+			line-height: 40px
+	.popularity
+		&__box
+			bottom: -10px
+		&__right
+			max-width: 540px
+			&-title
+				text-align: center
+				font-size: 30px
+				line-height: 40px
+			&-subtitle
+				text-align: center
+	.history
+		&__title
+			font-size: 30px
+			line-height: 40px
+			max-width: 460px
+			margin: auto
+			padding-bottom: 20px
+		&__text
+			padding-top: 10px
+		&__form
+			padding-right: 57%
+			padding-bottom: 135px
+	.item
+		max-width: 225px
+		min-height: 225px
+	.items
+		&__title
+			font-size: 30px
+			line-height: 40px
+		&__wrapper
+			min-height: 300px
+	.composition
+		&__box
+			max-width: 520px
+			margin: auto
+			padding-left: 0
+			padding-right: 0
+		&__title
+			font-size: 30px
+			line-height: 40px
+			br
+				display: none
+		&__item-inner
+			width: 332px
+			height: 332px
+		&__link
+			width: 332px
+			height: 332px
+			padding: 14px 15px 84px 16px
+			margin-left: 0
+			&-text
+				padding-left: 0
+				&::before
+					display: none
+			&-btn
+				padding: 22px 48px 22px 62px
+				left: 0
+	.reviews__title
+		text-align: center
+		font-size: 30px
+		line-height: 40px
+		br
+			display: none
+	.reviews
+		&__content
+			padding-bottom: 150px
+		&__link
+			margin-top: -192px
+			&-tab
+				margin-right: 0
+	.footer
+		&__inner
+			align-items: center
+			flex-direction: column
+			justify-content: center
 @media ( max-width: 760px )
 	.top__inner-img img
 		width: 200px
+	.advantages
+		&__inner
+			padding-top: 180px
+			padding-left: 0
+			padding-right: 0
+		&__item
+			padding-right: 30px
+	.build
+		&__wrapper
+			min-height: 0
+			padding-left: 0
+			padding-right: 0
+		&__inner-box
+			padding: 0
+			border: none
+		&__inner-link
+			padding: 22px 5px
+			width: 100%
+			text-align: center
+			display: block
+			&::after
+				display: none
+
+@media ( max-width: 740px )
+	.reviews
+		&__text
+			padding-left: 0
+			padding-right: 0
+			&:nth-child(odd)
+				padding-left: 0
+				padding-right: 0
+				&::before
+					left: 0
+		&__link-popup
+			width: 100%
+			text-align: center
+			padding: 22px 5px
+			&::after
+				display: none
+		&__tab
+			width: 49%
+			text-align: center
+			padding: 25px 5px
+			display: inline-block
+
 @media ( max-width: 700px )
 	.header__text
 		display: none
+	.history
+		&__title
+			padding-top: 0
+		&__form
+			padding-right: 45px
+			padding-top: 400px
+			padding-bottom: 50px
+			&::after
+				left: 0
+				right: 0
+				top: 0
+				width: 100%
+				height: 385px
+@media ( max-width: 680px )
+	.items
+		&__inner
+			display: block
+	.item
+		max-width: 100%
+		width: 100%
+		border: none
+		text-align: center
+
 @media ( max-width: 640px )
 	.top__inner-form
 		left: 15px
@@ -55,9 +433,66 @@
 			margin-right: 0
 		&-img
 			order: 1
+		.advantages
+			&__inner
+				padding-top: 10px
+	.popularity__box
+		&-link
+			max-width: 600px
+			padding: 22px 10px 22px 10px
+			text-align: center
+			width: 100%
+			position: static
+			display: block
+	.quote
+		&__inner
+			border: none
+			font-size: 20px
+			line-height: 35px
 @media ( max-width: 600px )
 	.top__inner-img img
 		width: 85px
+	.advantages
+		&__inner
+			padding-top: 120px
+		&__item
+			width: 100%
+	.tabs
+		&__box
+			flex-direction: column
+			.tab
+				width: 100%
+			.tab:first-child, .tab:nth-child(3)
+				border-right: 0
+				padding-right: 0
+			.tab:last-child, .tab:nth-child(2)
+				padding-left: 0
+	.tab-order
+		&-0
+			order: 0
+		&-1
+			order: 1
+		&-2
+			order: 2
+		&-3
+			order: 3
+@media ( max-width: 550px )
+	.tabs
+		&__content
+			height: 153px
+			background-image: none
+			&::after
+				display: none
+			&::before
+				display: none
+	.tab-order-3
+		border-bottom: none
+	.tab.active::after
+		display: none
+	.tabs
+		&__reviews
+			position: static
+			margin: 0
 @media ( max-width: 480px )
 	.header__phone
 		font-size: 14px
@@ -65,6 +500,70 @@
 		display: none
 	.header__logo img
 		width: 110px
+	.list__title
+		font-size: 24px
+		line-height: 30px
+	.tab
+		font-size: 12px
+		padding: 24px 0
+		&-item
+			display: none
+			&:first-child
+				display: none
+	.tabs
+		padding-right: 0
+		&__reviews
+			padding: 0
+			&-text
+				font-size: 14px
+			&-inner
+				padding: 30px 20px
+				width: 283px
+			&-link
+				left: 60px
+	.popularity
+		&__right-title
+			font-size: 24px
+			line-height: 30px
+		&__right-list li
+			margin-bottom: 15px
+		&__box
+			bottom: -255px
+			padding: 0
+			&-text
+				text-align: center
+				border: none
+		&__wrapper
+			min-height: 0
+	.mobile-bg
+		min-height: 245px
+	.history
+		&__form
+			padding-left: 10px
+			padding-right: 10px
+		&__title
+			padding-top: 155px
+	.quote
+		&__inner
+			font-size: 14px
+			line-height: 24px
+	.author
+		font-size: 14px
+	.build__inner
+		&-title
+			font-size: 24px
+			line-height: 30px
+			text-align: center
+	.sertificate
+		&__box
+			fieldset
+				padding: 45px 10px 95px 10px
+		&__title
+			font-size: 24px
+			line-height: 30px
+		&__images img
+			max-width: 100%
+			width: 100%
 
 @media ( max-width: 360px )
 	.top__images
@@ -80,3 +579,94 @@
 			margin-bottom: 10px
 	.top__wrapper
 		margin-top: -365px
+	.advantages
+		&__inner
+			padding-top: 50px
+		&__item
+			padding-bottom: 40px
+	.container
+		padding-left: 10px
+		padding-right: 10px
+	.list__link
+		a
+			margin-top: 0
+			padding: 22px 10px
+			text-align: center
+			&::after
+				display: none
+	.history
+		&__form
+			text-align: center
+			&-title
+				padding-right: 0
+		&__title
+			font-size: 20px
+			line-height: 26px
+		form
+			input
+				text-align: center
+		.form
+			&__btn
+				padding: 22px 5px
+				&::after
+					display: none
+	.items
+		&__inner
+			background-color: #f6f9f3
+		&__title
+			font-size: 24px
+			line-height: 30px
+	.item
+		&__number
+			color: #fff
+	.composition
+		padding: 115px 0 100px
+		&__title
+			font-size: 24px
+			line-height: 30px
+			text-align: center
+		&__item-inner
+			width: 300px
+			height: 300px
+		&__link
+			width: 300px
+			height: 100%
+			padding: 0
+			border: none
+			text-align: center
+			&-text
+				p
+					font-size: 14px
+					line-height: 24px
+			&-btn
+				padding: 22px 10px
+				left: -10px
+				right: -10px
+				bottom: auto
+				text-align: center
+				&::after
+					display: none
+	.reviews
+		&__title
+			font-size: 24px
+			line-height: 30px
+	.sertificate
+		background-color: #f6f9f3
+		&__box
+			padding: 0
+			background-color: #f6f9f3
+			fieldset
+				border: none
+				padding: 0
+			legend
+				text-align: center
+				font-weight: 700
+		&__link
+			padding: 22px 5px
+			width: 100%
+			display: block
+			text-align: center
+			position: static
+			margin-top: 25px
+			&::after
+				display: none
